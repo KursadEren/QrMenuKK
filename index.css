@@ -34,7 +34,7 @@
   .item {
     
     animation: slide-in-right 1s ease-in-out;
-    background-color:cadetblue;
+   
     border: 1px solid #000000;
     -webkit-box-shadow: -1px 6px 14px 1px rgba(0,0,0,0.39); 
     box-shadow: -1px 6px 14px 1px rgba(0,0,0,0.39);
@@ -43,11 +43,31 @@
     
     border-radius: 10px;
     animation: slide-in-right 1s ease-in-out;
-     background: linear-gradient(to right, #ffffff, #000000);
+   
      flex-direction: column;
-     display: flex;
      align-items: center;
      
+    
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+     
+  }
+  .item-2{
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000000;
   }
   
   .list-item{
