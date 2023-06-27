@@ -1,114 +1,111 @@
-.body{
-    width: 100%;
-    height: 100%;
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
-.html{
-    width: 100%;
-    height: 100%;
-}
-.header{
-    display: flex; /* Flexbox modelini kullanarak elemanları düzenler */
-    justify-content: center; /* Elemanları yatayda ortalar */
-    align-items: center; /* Elemanları dikeyde ortalar */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:cadetblue;
-}
-#Grup{
-    
-}
-@keyframes slide-in-right {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  .sliding-div {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-  
-  .item {
-    
-    animation: slide-in-right 1s ease-in-out;
-   
-    border: 1px solid #000000;
-    -webkit-box-shadow: -1px 6px 14px 1px rgba(0,0,0,0.39); 
-    box-shadow: -1px 6px 14px 1px rgba(0,0,0,0.39);
-    height: 100%;
-    width: 100%;
-    
-    border-radius: 10px;
-    animation: slide-in-right 1s ease-in-out;
-   
-     flex-direction: column;
-     align-items: center;
-     
-    
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-     
-  }
-  .item-2{
-    height: 100%;
-    width: 100%;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #000000;
-  }
-  
-  .list-item{
-    
-  }
 
-  .flip-card {
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: cadetblue;
+}
+
+#Grup {
+  
+}
+
+@keyframes slide-in-right {
+  0% {
+      transform: translateX(100%);
   }
-  
-  .flip-card-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
+  100% {
+      transform: translateX(0);
   }
+}
+
+.sliding-div {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.item {
+  animation: slide-in-right 1s ease-in-out;
+  border: 1px solid #000000;
+  -webkit-box-shadow: -1px 6px 14px 1px rgba(0, 0, 0, 0.39);
+  box-shadow: -1px 6px 14px 1px rgba(0, 0, 0, 0.39);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  animation: slide-in-right 1s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  background-color: cadetblue; /* Modified color */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item-2 {
+  height: 100%;
+  width: 100%;
+   /* Modified color */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+.list-item {
   
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    /* Ön yüzün stil ayarları */
-  }
-  
-  .flip-card-back {
-    transform: rotateY(180deg);
-    /* Arka yüzün stil ayarları */
-  }
-  
-  
-  
-  
-  
+}
+
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-right: 20px; /* Added margin to the right */
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+ 
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+ 
+  border-radius: 10px;
+}
